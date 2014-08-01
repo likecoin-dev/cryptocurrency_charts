@@ -1,0 +1,42 @@
+<!doctype html>
+<html class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
+    <title>cryptocurrency_charts</title>
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+    <link rel="stylesheet" href="styles/vendor.css">
+
+    <link rel="stylesheet" href="styles/main.css">
+
+    <!--Firebase-->
+    <script src="https://cdn.firebase.com/js/client/1.0.18/firebase.js"></script>
+
+    <script src="scripts/vendor/modernizr.js"></script>
+  </head>
+  <body>
+
+
+
+    <div class="hero-unit">
+	      ACTION
+      	<ul id="action" >
+      		<!-- items will show up here ! -->
+      	</ul>
+    </div>
+
+    <script type="text/x-handlebars-template" id="btc_feed">
+          {{#each}}
+          <li>{{price}} : {{value}}</li>
+          <li>{{price}} : {{value}}</li>
+          <li>{{price}} : {{value}}</li>
+    </script>
+
+
+    <script src="scripts/vendor.js"></script>
+
+        <script src="scripts/main.js"></script>
+</body>
+</html>

@@ -3,6 +3,11 @@
 @import '../../bower_components/neat/app/assets/stylesheets/neat';
 
 // Custom Styles
+
+@mixin border {
+	border: solid 1px black;
+}
+
 body {
   background: #fafafa;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -10,17 +15,41 @@ body {
 }
 
 .hero-unit {
+	//@include outer-container;
+	width: 600px;
   margin: 50px auto 0 auto;
-  width: 600px;
-  font-size: 18px;
-  font-weight: 200;
   line-height: 30px;
   background-color: #eee;
   border-radius: 6px;
   padding: 60px;
-  h1 {
-    font-size: 60px;
-    line-height: 1;
-    letter-spacing: -1px;
+  height: 800px;
+  #price_title {
+  	@include span-columns(12);
+  	height: 50px;
+  	@include border;
+  }
+  #bid_action {
+  	@include span-columns(4);
+  	min-height: 50px;
+  	@include border;
+  }
+  #ask_action {
+  	@include span-columns(4);
+  	min-height: 50px;
+  	@include border;
+  }
+  #last_action {
+  	@include span-columns(4);
+  	min-height: 50px;
+  	@include border;
+  }
+  .value_color_green {
+  	color: green;
+  }
+  .value_color_red {
+  	color: red;
+  }
+  .value_color_black {
+  	color: red;
   }
 }
