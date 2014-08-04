@@ -28,19 +28,13 @@ function showPrice(snapshot) {
 		if(Previous.bid.length != 0){
 			var bid_length = Previous.bid.length - 1;
 			var bid_last = Previous.bid[bid_length].value;
+			$(".value_feed").addClass(".");
 			if(snapshot.val() > bid_last){
 				data.value_color = 'value_color_green';
 			} else if (snapshot.val() < bid_last){
 				data.value_color = 'value_color_red';
 			}
 		}
-
-
-		console.log(data);
-		console.log(Previous.bid.length);
-		console.log(bid_length);
-		console.log(snapshot.val());
-		console.log(bid_last);
 
 		$(".bid_action").prepend(template(data));
 		Previous.bid.push(data);

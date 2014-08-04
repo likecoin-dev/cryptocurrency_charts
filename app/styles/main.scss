@@ -45,11 +45,12 @@ body {
   }
   .value_color_green {
   	color: green;
+  	@include animation(scale 0.5 ease-in, slide 2.0s ease);
   }
   .value_color_red {
   	color: red;
   }
-  .value_color_black {
-  	color: red;
+  .value_feed_size {
+  	
   }
 }
