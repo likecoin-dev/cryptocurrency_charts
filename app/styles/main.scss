@@ -8,49 +8,77 @@
 	border: solid 1px black;
 }
 
+@mixin feedlist {
+  list-style: none; 
+  padding-left: 0px;
+  text-align: center;
+}
+
 body {
-  background: #fafafa;
+  background: black;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: #333;
+  background-color: #002855;
+  color: white;
 }
 
 .hero-unit {
 	//@include outer-container;
-	width: 600px;
+	width: 1200px;
   margin: 50px auto 0 auto;
   line-height: 30px;
-  background-color: #eee;
+  // background-color: #eee;
+  background-color: #002855;
   border-radius: 6px;
   padding: 60px;
-  height: 800px;
+  // height: 900px;
+  margin: 0 auto;
+  #btc_chart {
+    height: 400px;
+    min-width: 600px;
+    border-radius: 6px;
+  }
   #price_title {
   	@include span-columns(12);
   	height: 50px;
   	@include border;
+    p {
+      font-size: 20px;
+    }
   }
   #bid_action {
   	@include span-columns(4);
   	min-height: 50px;
   	@include border;
+    .bid_action {
+      @include feedlist;
+      font-size: 25px;
+    }
   }
   #ask_action {
   	@include span-columns(4);
   	min-height: 50px;
   	@include border;
+    .ask_action {
+      @include feedlist;
+      font-size: 25px;
+    }
   }
   #last_action {
   	@include span-columns(4);
   	min-height: 50px;
   	@include border;
+    .last_action {
+      @include feedlist;
+      font-size: 25px;
+    }
   }
   .value_color_green {
   	color: green;
-  	@include animation(scale 0.5 ease-in, slide 2.0s ease);
   }
   .value_color_red {
   	color: red;
   }
   .value_feed_size {
-  	
+  	@include animation(scale 1.0s ease-in, slide 2.0s ease);
   }
 }
