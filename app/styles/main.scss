@@ -78,7 +78,7 @@ body {
   .value_color_red {
   	color: red;
   }
-  .value_feed_size {
-  	@include animation(scale 1.0s ease-in, slide 2.0s ease);
-  }
+  // .value_feed_size {
+  // 	@include animation(scale 1.0s ease-in, slide 2.0s ease);
+  // }
 }
