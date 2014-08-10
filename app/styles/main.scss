@@ -5,13 +5,14 @@
 // Custom Styles
 
 @mixin border {
-	border: solid 1px black;
+	border: solid 1px white;
 }
 
 @mixin feedlist {
   list-style: none; 
   padding-left: 0px;
   text-align: center;
+  
 }
 
 body {
@@ -47,8 +48,11 @@ body {
   }
   #bid_action {
   	@include span-columns(4);
-  	min-height: 50px;
+  	height: 326px;
   	@include border;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
     .bid_action {
       @include feedlist;
       font-size: 25px;
@@ -56,8 +60,11 @@ body {
   }
   #ask_action {
   	@include span-columns(4);
-  	min-height: 50px;
+  	height: 326px;
   	@include border;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
     .ask_action {
       @include feedlist;
       font-size: 25px;
@@ -65,8 +72,11 @@ body {
   }
   #last_action {
   	@include span-columns(4);
-  	min-height: 50px;
+  	height: 326px;
   	@include border;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
     .last_action {
       @include feedlist;
       font-size: 25px;

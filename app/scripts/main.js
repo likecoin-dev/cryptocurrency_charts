@@ -44,7 +44,7 @@ $(function () {
 	                    bid_series = this.series[0];
 	                    ask_series = this.series[1];
 	                    last_series = this.series[2];
-	                    setInterval(addBitCoin_dataPoint , 1000);
+	                    setInterval(addBitCoin_dataPoint , 2000);
 	                }
 	            }
 	        } ,
@@ -65,7 +65,7 @@ $(function () {
 	            selected: 0
 	        },
 	        title : {
-	            text : 'BitCoin Live Data'
+	            text : 'Bitcoin Live Data'
 	        },
 	        exporting: {
 	            enabled: false
